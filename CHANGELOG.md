@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.0] - 2018-01-29
+### Added
+- 03 - Working with Flexbox flex-direction/index.html
+
+### Changed
+- assets/style.css
+
 ## [0.2.0] - 2018-01-29
 ### Added
 - 02 - Introduction to Flexbox/index.html
