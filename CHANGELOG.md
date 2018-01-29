@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.8.0] - 2018-01-29
+### Added
+- 08 - Alignment and Centering with align-self/index.html
+
+### Changed
+- assets/style.css - font sizes added for .box, .box-XS, .box-S, .box-L, .box-XL
+
 ## [0.7.0] - 2019-01-29
 ### Added
 - 07 - Alignment and Centering with align-items/index.html

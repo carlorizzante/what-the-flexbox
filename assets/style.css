@@ -60,3 +60,15 @@ body {
 .box12 {
   background-color: #aa00c8;
 }
+.box-XS {
+  font-size: .5rem;
+}
+.box-S {
+  font-size: 1rem;
+}
+.box-L {
+  font-size: 1.5rem;
+}
+.box-XL {
+  font-size: 2rem;
+}
