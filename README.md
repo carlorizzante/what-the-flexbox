@@ -1,5 +1,5 @@
 # What The Flexbox?!
-Release 0.3.0
+Release 0.4.0
 
 Playing around with CSS Flexbox.
 
@@ -8,3 +8,4 @@ Course generously offered by [Wes Bos](http://wesbos.com/) at [What The Flexbox?
 ## Index
 - 02 - Introduction to Flexbox
 - 03 - Working with Flexbox flex-direction
+- 04 - Wrapping elements with Flexbox
