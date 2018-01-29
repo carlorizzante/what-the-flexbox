@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-border-box;
+}
+html,
+body {
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+.box {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+.box1 {
+  background-color: #1abc9c;
+}
+.box2 {
+  background-color: #3498db;
+}
+.box3 {
+  background-color: #9b59b6;
+}
+.box4 {
+  background-color: #34495e;
+}
+.box5 {
+  background-color: #f1c40f;
+}
+.box6 {
+  background-color: #e67e22;
+}
+.box7 {
+  background-color: #e74c3c;
+}
+.box8 {
+  background-color: #bdc3c7;
+}
+.box9 {
+  background-color: #2ecc71;
+}
+.box10 {
+  background-color: #16a085;
+}
+.box11 {
+  background-color: #a9f17c;
+}
+.box12 {
+  background-color: #aa00c8;
+}
