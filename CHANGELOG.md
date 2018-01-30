@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.13.0] - 108-01-30
+## [0.14.0] - 2018-01-30
+### added
+- 14 - Pure Flexbox navigation code along/index.html
+- assets/style.css - adds .centered and .small rules.
+
+## [0.13.0] - 2018-01-30
 ### added
 - 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer/src/style.css
 - 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer/gulpfile.js

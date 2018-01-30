@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+
+  <title>Pure Flexbox navigation code along</title>
+
+  <style>
+    :root {
+      /* --bg-item: rgba(255,255,255,0.6);
+      --bg-item-hover: rgba(255,255,255,0.9);
+      --border-color: rgba(255,255,255,0.8); */
+      --bg-item: rgba(0,0,0,0.3);
+      --bg-item-hover: rgba(0,0,0,0.4);
+      --border-color: rgba(0,0,0,0.5);
+      --item-text-color: rgba(255,255,255,0.8);
+      --item-text-color-hover: rgba(255,255,255,1);
+
+      --large: 1000rem;
+      --base: 50rem;
+      --small: 30rem;
+      --xsmall: 20rem;
+      --xxsmall: 14rem;
+    }
+    html {
+      min-height: 100vh;
+    }
+    body {
+      background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    }
+    .nav-primary {
+      margin: 4rem auto 0;
+      padding: 0;
+      max-width: var(--base);
+    }
+    .nav-small {
+      max-width: var(--small);
+    }
+    .nav-xsmall {
+      max-width: var(--xsmall);
+    }
+    .nav-xxsmall {
+      max-width: var(--xxsmall);
+    }
+    .nav__menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+    }
+    .nav__item {
+      flex: 3;
+      cursor: pointer;
+    }
+    .nav__icon {
+      flex: 1;
+    }
+    @media all and (max-width: 40rem) {
+      body {
+        background: red;
+      }
+      .nav__item {
+        flex-basis: calc(100% / 3);
+      }
+      .nav__icon {
+        flex-basis: calc(100% / 4);
+      }
+    }
+    @media all and (max-width: 20rem) {
+      body {
+        background: teal;
+      }
+      .nav__item {
+        flex-basis: calc(100% / 2);
+      }
+      .nav__icon {
+        flex-basis: calc(100% / 4);
+      }
+    }
+    @media all and (max-width: 14rem) {
+      body {
+        background: pink;
+      }
+      .nav__item {
+        flex-basis: 100%;
+      }
+      .nav__icon {
+        flex-basis: calc(100% / 4);
+      }
+    }
+    @media all and (max-width: 11rem) {
+      body {
+        background: orange;
+      }
+      .nav__icon {
+        flex-basis: calc(100% / 2);
+      }
+    }
+    .nav__item > a {
+      display: block;
+      padding: .5rem;
+      font-family: "Open Sans", sans-serif;
+      font-size: .8rem;
+      color: var(--item-text-color);
+      text-decoration: none;
+      text-align: center;
+      border-right: 1px dotted var(--border-color);
+      border-bottom: 1px dotted var(--border-color);
+      background-color: var(--bg-item);
+      transition: all .3s;
+    }
+    .nav__item:last-child > a {
+      border-right: none;
+    }
+    .nav__item > a:hover {
+      color: var(--item-text-color-hover);
+      background-color: var(--bg-item-hover);
+    }
+  </style>
+</head>
+<body>
+
+  <h3 class="label centered small">Resize to see how the nav block adapts to various screen resolutions.</h3>
+
+  <nav class="nav-primary">
+    <ul class="nav__menu">
+      <li class="nav__item nav__item-1"><a href="#">Home</a></li>
+      <li class="nav__item nav__item-2"><a href="#">Prices</a></li>
+      <li class="nav__item nav__item-3"><a href="#">Features</a></li>
+      <li class="nav__item nav__item-4"><a href="#">Products</a></li>
+      <li class="nav__item nav__item-5"><a href="#">About</a></li>
+      <li class="nav__item nav__item-6"><a href="#">Contact</a></li>
+      <li class="nav__item nav__item-7 nav__icon nav__icon-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="nav__item nav__item-8 nav__icon nav__icon-fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li class="nav__item nav__item-9 nav__icon nav__icon-github"><a href="#"><i class="fab fa-github"></i></a></li>
+      <li class="nav__item nav__item-10 nav__icon nav__icon-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </nav>
+
+  <nav class="nav-primary nav-small">
+    <ul class="nav__menu">
+      <li class="nav__item nav__item-1"><a href="#">Home</a></li>
+      <li class="nav__item nav__item-2"><a href="#">Prices</a></li>
+      <li class="nav__item nav__item-3"><a href="#">Features</a></li>
+      <li class="nav__item nav__item-4"><a href="#">Products</a></li>
+      <li class="nav__item nav__item-5"><a href="#">About</a></li>
+      <li class="nav__item nav__item-6"><a href="#">Contact</a></li>
+      <li class="nav__item nav__item-7 nav__icon nav__icon-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="nav__item nav__item-8 nav__icon nav__icon-fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li class="nav__item nav__item-9 nav__icon nav__icon-github"><a href="#"><i class="fab fa-github"></i></a></li>
+      <li class="nav__item nav__item-10 nav__icon nav__icon-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </nav>
+
+  <nav class="nav-primary nav-xsmall">
+    <ul class="nav__menu">
+      <li class="nav__item nav__item-1"><a href="#">Home</a></li>
+      <li class="nav__item nav__item-2"><a href="#">Prices</a></li>
+      <li class="nav__item nav__item-3"><a href="#">Features</a></li>
+      <li class="nav__item nav__item-4"><a href="#">Products</a></li>
+      <li class="nav__item nav__item-5"><a href="#">About</a></li>
+      <li class="nav__item nav__item-6"><a href="#">Contact</a></li>
+      <li class="nav__item nav__item-7 nav__icon nav__icon-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="nav__item nav__item-8 nav__icon nav__icon-fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li class="nav__item nav__item-9 nav__icon nav__icon-github"><a href="#"><i class="fab fa-github"></i></a></li>
+      <li class="nav__item nav__item-10 nav__icon nav__icon-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </nav>
+
+  <nav class="nav-primary nav-xxsmall">
+    <ul class="nav__menu">
+      <li class="nav__item nav__item-1"><a href="#">Home</a></li>
+      <li class="nav__item nav__item-2"><a href="#">Prices</a></li>
+      <li class="nav__item nav__item-3"><a href="#">Features</a></li>
+      <li class="nav__item nav__item-4"><a href="#">Products</a></li>
+      <li class="nav__item nav__item-5"><a href="#">About</a></li>
+      <li class="nav__item nav__item-6"><a href="#">Contact</a></li>
+      <li class="nav__item nav__item-7 nav__icon nav__icon-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="nav__item nav__item-8 nav__icon nav__icon-fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li class="nav__item nav__item-9 nav__icon nav__icon-github"><a href="#"><i class="fab fa-github"></i></a></li>
+      <li class="nav__item nav__item-10 nav__icon nav__icon-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

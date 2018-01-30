@@ -1,5 +1,5 @@
 # What The Flexbox?!
-Release 0.13.0
+Release 0.14.0
 
 Playing around with CSS Flexbox.
 
@@ -18,3 +18,4 @@ Course generously offered by [Wes Bos](http://wesbos.com/) at [What The Flexbox?
 - 11 - Finally understanding Flexbox flex-grow, flex-shrink and flex-basis
 - 12 - How Flexbox's flex-basis and wrapping work together
 - 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer
+- 14 - Pure Flexbox navigation code along
