@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.16.0] - 2018-01-30
+### Added
+- 16 - Nesting Flexbox for vertical and horizontal centering with Flexbox/index.html
+
 ## [0.15.0] - 2018-01-30
 ### Added
 - 15 - Mobile content reordering with Flexbox/index.html
