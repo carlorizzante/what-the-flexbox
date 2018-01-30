@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="../../assets/style.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-
-
   <title>Pure Flexbox navigation code along</title>
 
   <style>
@@ -32,7 +30,9 @@
       min-height: 100vh;
     }
     body {
-      background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+      transition: all 1s;
+      /* background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
+      background: #2376ae;
     }
     .nav-primary {
       margin: 4rem auto 0;
@@ -67,6 +67,7 @@
     @media all and (max-width: 40rem) {
       body {
         background: red;
+        background: #c16ecf;
       }
       .nav__item {
         flex-basis: calc(100% / 3);
@@ -130,6 +131,7 @@
 <body>
 
   <h3 class="label centered small">Resize to see how the nav block adapts to various screen resolutions.</h3>
+  <p class="centered small"><i>Keep Dev Tools opened to resize to narrower widths.</i></p>
 
   <nav class="nav-primary">
     <ul class="nav__menu">
