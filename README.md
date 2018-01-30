@@ -1,5 +1,5 @@
 # What The Flexbox?!
-Release 0.9.0
+Release 0.10.0
 
 Playing around with CSS Flexbox.
 
@@ -14,3 +14,4 @@ Course generously offered by [Wes Bos](http://wesbos.com/) at [What The Flexbox?
 - 07 - Alignment and Centering with align-items
 - 08 - Alignment and Centering with align-self
 - 09 - Understanding Flexbox sizing with the flex property
+- 10 - Finally understanding Flexbox flex-grow, flex-shrink and flex-basis

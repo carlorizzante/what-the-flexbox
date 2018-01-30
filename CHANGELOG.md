@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.10.0] - 2018-01-30
+### Added
+- 10 - Finally understanding Flexbox flex-grow, flex-shrink and flex-basis/index.html
+
 ## [0.9.0] - 2018-01-30
 ### added
 - 09 - Understanding Flexbox sizing with the flex property/index.html
