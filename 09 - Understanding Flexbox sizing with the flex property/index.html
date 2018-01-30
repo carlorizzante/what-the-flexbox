@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/style.css">
+
+  <title>Understanding Flexbox sizing with the flex property</title>
+
+  <style>
+    .container {
+      border: 1px dashed teal;
+      display: flex;
+    }
+    .box {
+      font-size: 1rem;
+    }
+    .container-2 .box {
+      flex: 1;
+    }
+    .container-3 .box {
+      flex: 1;
+    }
+    .container-3 .box3 {
+      flex: 4;
+    }
+    .container-3 .box5 {
+      flex: 5;
+    }
+  </style>
+</head>
+<body>
+
+  <h3 class="label">Base</h3>
+  <div class="container container-1">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+    <div class="box box11">11</div>
+    <div class="box box12">12</div>
+  </div>
+
+  <h3 class="label">Flex 1</h3>
+  <div class="container container-2">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+    <div class="box box11">11</div>
+    <div class="box box12">12</div>
+  </div>
+
+  <h3 class="label">Various Flex</h3>
+  <div class="container container-3">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+    <div class="box box11">11</div>
+    <div class="box box12">12</div>
+  </div>
+
+  <script>
+    const boxes = document.querySelectorAll(".box");
+    boxes.forEach(fillText);
+    function fillText(box) {
+      min = 3;
+      max = 10;
+      text = Math.random().toString(36).substr(min, max);
+      start = Math.floor(Math.random() * min);
+      end = Math.ceil(Math.random() * max) + start;
+      text = text.slice(start, end);
+      // console.log(text);
+      box.innerHTML = text;
+    }
+  </script>
+
+</body>
+</html>
