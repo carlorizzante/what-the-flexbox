@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.12.0] - 2018-01-30
+### added
+- 08 - Alignment and Centering with align-content/index.html
+
+### Edited
+- Sequences of chapters, added a new section 08.
+- Upped sections from 08 to 11 by 1.
+
+### Removed
+- 07 - Alignment and Centering with align-items/index.html
+
 ## [0.11.0] - 2018-01-30
 ### added
 - 11 - How Flexbox's flex-basis and wrapping work together/index.html
