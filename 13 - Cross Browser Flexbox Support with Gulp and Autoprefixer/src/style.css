@@ -1,0 +1,12 @@
+body {
+  background-color: pink;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px dashed teal;
+}
+.box {
+  flex: 1 1 300px;
+  font-size: 1rem;
+}

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.13.0] - 108-01-30
+### added
+- 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer/src/style.css
+- 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer/gulpfile.js
+- 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer/index.html
+- 13 - Cross Browser Flexbox Support with Gulp and Autoprefixer/package.json
+
 ## [0.12.0] - 2018-01-30
 ### added
 - 08 - Alignment and Centering with align-content/index.html
