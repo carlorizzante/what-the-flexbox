@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <title>Flexbox Pricing Grid</title>
+
+  <style>
+  :root {
+    --border: 1px solid rgba(255,255,255,0.5);
+    --shade: rgba(255,255,255,0.2);
+    --plan-1: rgb(0, 199, 171);
+    --plan-2: rgb(239, 144, 51);
+    --plan-3: rgb(247, 205, 31);
+  }
+    body {
+      background: white;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+    }
+    .wrapper {
+      margin: 0 auto;
+      max-width: 50rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .prices-grid {
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price {
+      margin: 0 10px;
+      flex: 1 1 calc(100% / 3);
+      /* flex: 1 1 calc(calc(100% / 3) - 20px); */
+      /* flex: 1 1 30%; */
+      /* background: rgba(0,0,0,0.3); */
+      /* border: var(--border); */
+      border-radius: 10px;
+      text-align: center;
+    }
+    .price__plan {
+      margin: 0;
+      padding: .5rem 0;
+      font-size: 2rem;
+      border-bottom: var(--border);
+    }
+    .price__details {
+      margin: 0;
+      padding: 1.5rem 1.5rem;
+      font-size: .8rem;
+      font-weight: 200;
+      border-bottom: var(--border);
+      background: var(--shade);
+    }
+    .price__items {
+      margin: 0;
+      list-style: none;
+      font-size: .8rem;
+      font-weight: 200;
+    }
+    .price__item {
+      padding: .4rem 0;
+      border-bottom: var(--border);;
+    }
+    .price__fee {
+      margin: 0;
+      padding: .5rem 0;
+      font-size: 3rem;
+      border-bottom: var(--border);
+    }
+    .price_cta {
+      padding: 1.5rem 0;
+      display: block;
+      align-self: flex-end;
+      background: var(--shade);
+    }
+    .price_cta > button {
+      margin: 0;
+      padding: .3rem 2rem;
+      font-size: 1.4rem;
+      border: none;
+      box-shadow: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+      font-weight: 700;
+    }
+    #plan-1,
+    #plan-1 button {
+      background: var(--plan-1);
+    }
+    #plan-2,
+    #plan-2 button {
+      background: var(--plan-2);
+    }
+    #plan-3,
+    #plan-3 button {
+      background: var(--plan-3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <section class="prices">
+      <div class="prices-grid">
+
+        <article id="plan-1" class="price">
+          <h1 class="price__plan">Personal</h1>
+          <p class="price__details">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+          <div class="ul price__items">
+            <li class="price__item">Fringilla Pharetra</li>
+            <li class="price__item">Sem Pellentesque Fringilla</li>
+            <li class="price__item">Fringilla Sem Pharetra</li>
+          </div>
+          <h2 class="price__fee">100</h2>
+          <div class="price_cta"><button>Buy</button></div>
+        </article>
+
+        <article id="plan-2" class="price">
+          <h1 class="price__plan">Business</h1>
+          <p class="price__details">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+          <div class="ul price__items">
+            <li class="price__item">Mattis Consectetur Dapibus</li>
+            <li class="price__item">Fermentum Sem</li>
+            <li class="price__item">Quam Nibh Fermentum Tristique</li>
+            <li class="price__item">Condimentum Aenean Etiam</li>
+            <li class="price__item">Ipsum Elit</li>
+          </div>
+          <h2 class="price__fee">300</h2>
+          <div class="price_cta"><button>Buy</button></div>
+        </article>
+
+        <article id="plan-3" class="price">
+          <h1 class="price__plan">Corporate</h1>
+          <p class="price__details">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+          <div class="ul price__items">
+            <li class="price__item">Tellus Malesuada Mollis</li>
+            <li class="price__item">Sollicitudin Ridiculus</li>
+            <li class="price__item">Egestas Adipiscing Magna</li>
+          </div>
+          <h2 class="price__fee">700</h2>
+          <div class="price_cta"><button>Buy</button></div>
+        </article>
+
+      </div><!-- END .prices-grid -->
+    </section>
+  </div><!-- END .wrapper -->
+
+</body>
+</html>

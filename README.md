@@ -1,5 +1,5 @@
 # What The Flexbox?!
-Release 0.16.0
+Release 0.17.0
 
 Playing around with CSS Flexbox.
 
@@ -21,3 +21,4 @@ Course generously offered by [Wes Bos](http://wesbos.com/) at [What The Flexbox?
 - 14 - Pure Flexbox navigation code along
 - 15 - Mobile content reordering with Flexbox
 - 16 - Nesting Flexbox for vertical and horizontal centering with Flexbox
+- 17 - Flexbox Pricing Grid
