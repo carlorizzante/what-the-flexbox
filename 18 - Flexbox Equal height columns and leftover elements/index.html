@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <title>Flexbox Equal height columns and leftover elements</title>
+
+  <style>
+    :root {
+      --size: 30%;
+      --gap: .2rem;
+    }
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: rgba(255,255,255,0.8);
+      background: teal;
+    }
+    .wrapper {
+      margin: 0 auto;
+      max-width: 50rem;
+    }
+    .container {
+      /* margin: calc(-1 * var(--gap)); */
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      border: 1px dashed purple;
+    }
+    .item {
+      margin: var(--gap);
+      padding: .5rem;
+      flex: 1 1 calc(100% / 3 - 2 * var(--gap));
+      border-radius: 4px;
+      background: rgba(255,255,255,0.3);
+    }
+    .xsmall {
+      font-size: calc(100% * var(--size) - var(--size));
+    }
+    .small {
+      font-size: calc(100% - var(--size))
+    }
+    .large {
+      font-size: calc(100% + var(--size));
+    }
+    .xlarge {
+      font-size: calc(100% + var(-size) + var(--size));
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <ul class=container>
+      <li class="item">Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+      <li class="item xsmall">Provident quo id sit non, enim, eum?</li>
+      <li class="item small">Consequuntur voluptatibus molestias, explicabo laudantium numquam eaque?</li>
+      <li class="item">Aperiam necessitatibus soluta, delectus vero voluptates eius!</li>
+      <li class="item large">Earum dolores, officiis harum! Minima, mollitia, sit?</li>
+      <li class="item">Consequuntur laboriosam commodi recusandae doloribus consequatur. Harum.</li>
+      <li class="item xlarge">Inventore sapiente nihil, velit, aliquam vel earum.</li>
+      <li class="item">Ipsa blanditiis, quo fugit nemo impedit assumenda.</li>
+      <li class="item small">Fugit, suscipit, quaerat. Alias, dignissimos, iste. Commodi.</li>
+      <li class="item large">Impedit aspernatur, animi rem. Exercitationem, omnis, non.</li>
+      <li class="item">Officia esse qui amet, alias adipisci voluptatem!</li>
+      <li class="item xsmall">Odio tempora nihil deleniti amet, aliquid, ea?</li>
+      <li class="item">Deserunt at sunt, reiciendis amet, quod vel!</li>
+      <li class="item xlarge">Voluptatibus velit repudiandae deserunt id numquam ullam.</li>
+      <li class="item">Libero molestias excepturi accusamus ipsum nisi sed.</li>
+      <li class="item large">Consequuntur earum a omnis, minima delectus minus!</li>
+      <li class="item xsmall">Molestiae neque commodi est, voluptatibus dolor quos.</li>
+      <li class="item">Consectetur pariatur neque beatae, animi odio accusamus!</li>
+      <li class="item small">Voluptas, ipsam a veritatis amet debitis! Doloremque.</li>
+      <li class="item large">Molestias voluptates maxime ipsam laudantium voluptate! Consectetur.</li>
+      <li class="item">Magni esse iure velit earum recusandae, quod.</li>
+      <li class="item">Delectus, nemo. Voluptatem laudantium, ipsam provident quisquam.</li>
+      <li class="item xlarge">Perferendis corporis eius velit atque, fugit, repudiandae.</li>
+      <li class="item">Explicabo nesciunt expedita facere minima, quidem dolore.</li>
+    </ul>
+  </div><!-- END .wrapper -->
+
+</body>
+</html>

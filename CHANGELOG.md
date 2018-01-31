@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.18.0] - 2018-01-31
+### Added
+- 18 - Flexbox Equal height columns and leftover elements/index.html
+
 ## [0.17.0] - 2018-01-31
 ### Added
 - 17 - Flexbox Pricing Grid/index.html
