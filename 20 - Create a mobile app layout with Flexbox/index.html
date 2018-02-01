@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <title>Create a mobile app layout with Flexbox</title>
+
+  <style>
+    :root {
+      --nav-text-color: rgba(255,255,255,0.9);
+      --nav-background-color: #F7C744;
+      /* --nav-border-line: 2px solid rgba(0,0,0,0.2); */
+      --nav-border-line: none;
+      --content-border-line: 4px solid rgba(0,0,0,0.2);
+      /* buttons */
+      --button-text-color: rgba(255,255,255,0.9);
+      --button-background-color: rgba(0,0,0,0.05);
+      /* nav items */
+      --nav-item-border: 1px solid rgba(255,255,255,0.7);
+      /* app */
+      --title-color: black;
+      --text-color: rgba(0,0,0,0.9);
+      --blockquote-color: rgba(0,0,0,0.6);
+    }
+    body {
+      font-size: 14px;
+      background: teal;
+      height: 100vh;
+    }
+    .wrapper {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .app {
+      margin: 0 10rem;
+      width: 100%;
+      max-width: 30rem;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      border: 8px solid black;
+      border-bottom-width: 50px;
+      border-radius: 10px;
+      background: white;
+    }
+    .app h1 {
+      color: var(--title-color);
+    }
+    .app p {
+      color: var(--text-color);
+    }
+    p.intro {
+      margin: 0;
+      padding: 0;
+      /* font-family: serif; */
+      /* font-size: 120%; */
+      font-style: italic;
+      color: var(--blockquote-color);
+    }
+    blockquote {
+      margin: 0 auto;
+      padding-left: 1rem;
+      font-style: italic;
+      color: var(--blockquote-color);
+      border-left: 2px solid #309eb8;
+    }
+    img {
+      width: 100%:auto;
+      max-width: 100%;
+      height: auto;
+    }
+    img.left {
+      float: left;
+      margin: .4rem 1rem .4rem 0;
+      width: calc(100% / 2 - 1rem);
+    }
+    img.right {
+      float: right;
+      margin: .4rem 0 .4rem 1rem 1rem;
+      width: calc(100% / 2 - 1rem);
+    }
+    header,
+    footer {
+      color: var(--nav-text-color);
+      background: var(--nav-background-color);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+    header h1 {
+      line-height: 1.2rem;
+      align-self: center;
+    }
+    footer > .menu {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+    }
+    header {
+      border-bottom: var(--nav-border-line);
+    }
+    footer {
+      border-top: var(--nav-border-line);
+    }
+    a.button {
+      display: block;
+      margin: 1rem;
+      padding: .5rem .7rem;
+      color: var(--button-text-color);
+      background: var(--button-background-color);
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .menu__item {
+      /* display: flex; */
+      flex: 1;
+      margin: 0;
+      padding: .4rem 1rem;
+      /* flex-direction: column; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      text-align: center;
+      border-right: var(--nav-item-border);
+    }
+    .menu__item:last-child {
+      border-right: none;
+    }
+    .menu__item i {
+      width: 100%;
+    }
+    .content {
+      padding: 1rem;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+      border-top: var(--content-border-line);
+      border-bottom: var(--content-border-line);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="app">
+      <header class="app-header">
+        <a href="" class="button nav__back"><i class="fas fa-arrow-left"></i></a>
+        <h1>Flexbox App Layout</h1>
+        <a href="" class="button"><i class="fas fa-cog"></i></a>
+      </header>
+
+      <div class="main content">
+        <h1>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor!</h1>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <blockquote>Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</blockquote>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.</p>
+        <img class="left" src="../../assets/img_33.jpg" alt="">
+        <p>Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+        <blockquote>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.</blockquote>
+        <p>Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>
+        <img class="right" src="../../assets/img_33.jpg" alt="">
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      </div>
+
+      <footer class="app-footer">
+        <ul class="menu">
+          <li class="menu__item"><i class="fa fa-home"></i>Home</li>
+          <li class="menu__item"><i class="far fa-bell"></i>Notifications</li>
+          <li class="menu__item"><i class="far fa-envelope"></i>Messages</li>
+          <li class="menu__item"><i class="far fa-user"></i>Profile</li>
+        </ul>
+      </footer>
+
+    </div><!-- END .app -->
+  </div><!-- END .wrapper -->
+</body>
+</html>

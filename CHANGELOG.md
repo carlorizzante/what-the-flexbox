@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.20.0] - 2018-02-01
+### Added
+- 20 - Create a mobile app layout with Flexbox/index.html
+
 ## [0.19.0] - 2018-02-01
 ### Added
 - 19 - Flexbox single line form/index.html
