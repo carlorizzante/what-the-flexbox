@@ -1,5 +1,5 @@
 # What The Flexbox?!
-Release 0.18.0
+Release 0.19.0
 
 Playing around with CSS Flexbox.
 
@@ -23,3 +23,4 @@ Course generously offered by [Wes Bos](http://wesbos.com/) at [What The Flexbox?
 - 16 - Nesting Flexbox for vertical and horizontal centering with Flexbox
 - 17 - Flexbox Pricing Grid
 - 18 - Flexbox Equal height columns and leftover elements
+- 19 - Flexbox single line form

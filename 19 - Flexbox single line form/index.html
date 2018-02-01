@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../assets/style.css">
+
+  <title>Flexbox single line form</title>
+
+  <style>
+  :root {
+    /* inputs */
+    --input-text-color: rgba(0,0,0,0.5);
+    --input-placeholder-text-color: rgba(0,0,0,1);
+    --input-background: rgba(255,255,255,0.8);
+    --input-border-right: 1px solid rgba(0,0,0,0.1);
+    /* submit */
+    --input-submit-text-color: rgba(255,255,255,0.8);
+    --input-submit-background: #ff5a5f;
+    /* form */
+    --form-background: none;
+    /* --form-borders: 10px solid rgba(255,255,255,0.5); */
+    --form-borders: 10px solid rgba(0,0,0,0.3);
+  }
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+    }
+    .wrapper {
+      position: relative;
+    }
+    .cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    .flex-form {
+      display: flex;
+      border: var(--form-borders);
+      border-radius: 6px;
+    }
+    .flex-form > * {
+      display: inline-block;
+      margin: 0;
+      padding: 1rem;
+      outline: 0;
+      font-size: .75rem;
+      color: var(--input-text-color);
+      border: none;
+      border-right: var(--input-border-right);
+      background: var(--input-background);
+      cursor: pointer;
+    }
+    .flex-form > *::placeholder {
+      color: black;
+    }
+    .flex-form > [type="search"] {
+      flex-basis: 12rem;
+    }
+    .flex-form > [type="submit"] {
+      font-weight: 900;
+      color: var(--input-submit-text-color);
+      background: var(--input-submit-background);
+      cursor: pointer;
+    }
+    .flex-form > select {
+      padding-right: 2.2rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    select.minimal {
+      background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+      background-position:
+        calc(100% - 20px) calc(1em + 12px),
+        calc(100% - 15px) calc(1em + 12px),
+        calc(100% - 2rem) 0.5em;
+      background-size:
+        10% 10%,
+        5px 5px,
+        1px 2.4rem;
+      background-repeat: no-repeat;
+    }
+    select:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="cover">
+
+      <form action="" class="flex-form">
+
+        <input type="search" placeholder="Where do you want to go">
+
+        <label for="from">From</label>
+        <input type="date" name="from">
+
+        <label for="to">To</label>
+        <input type="date" name="to">
+
+        <select name="guests" id="" class="minimal">
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+        </select>
+
+        <input type="submit" value="Search">
+      </form>
+
+    </div><!-- END .cover -->
+
+    <video autoplay loop=true
+      poster="../../assets/video/snap/Mt_Baker.jpg" >
+      <source
+        src="../../assets/video/webm/Mt_Baker.webm"
+        type="video/webm">
+      <source
+        src="../../assets/video/mp4/Mt_Baker.mp4"
+        type="video/mp4">
+    </video>
+  </div><!-- END .wrapper -->
+</body>
+</html>

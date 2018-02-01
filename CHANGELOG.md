@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.19.0] - 2018-02-01
+### Added
+- 19 - Flexbox single line form/index.html
+
 ## [0.18.0] - 2018-01-31
 ### Added
 - 18 - Flexbox Equal height columns and leftover elements/index.html
