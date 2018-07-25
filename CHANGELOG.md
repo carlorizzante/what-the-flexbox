@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.20.1] - 2018-07-25
+### Removed
+package-lock.json - high severity security vulnerability detected
+
 ## [0.20.0] - 2018-02-01
 ### Added
 - 20 - Create a mobile app layout with Flexbox/index.html

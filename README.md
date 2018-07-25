@@ -1,5 +1,5 @@
 # What The Flexbox?!
-Release 0.20.0
+Release 0.20.1
 
 Playing around with CSS Flexbox.
 
